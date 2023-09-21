@@ -5,6 +5,24 @@ def introduction():
     print("You find yourself trapped in a swirling vortex of mystery.")
     print("Your goal is to navigate through the vortex and uncover its secrets.")
     print("Choose your path carefully, and beware of the unknown.")
+    
+def deeper_cave():
+    print("\nYou venture deeper into the cave and discover a hidden chamber.")
+    print("Inside the chamber, you find a treasure chest.")
+    print("Do you want to open the chest?")
+    print("1. Yes")
+    print("2. No")
+    choice = input("Enter your choice (1 or 2): ")
+
+    if choice == '1':
+        print("\nCongratulations! You've found the hidden treasure.")
+        print("You have successfully navigated the Mysterious Vortex.")
+    elif choice == '2':
+        print("\nYou decide to leave the chest untouched and return to the vortex.")
+        choose_path()
+    else:
+        print("Invalid choice. Try again.")
+        deeper_cave()
 
 def dark_tunnel():
     print("\nYou enter the dark tunnel, and it becomes pitch black.")
@@ -75,23 +93,7 @@ def mysterious_cave():
         print("Invalid choice. Try again.")
         mysterious_cave()
 
-def deeper_cave():
-    print("\nYou venture deeper into the cave and discover a hidden chamber.")
-    print("Inside the chamber, you find a treasure chest.")
-    print("Do you want to open the chest?")
-    print("1. Yes")
-    print("2. No")
-    choice = input("Enter your choice (1 or 2): ")
 
-    if choice == '1':
-        print("\nCongratulations! You've found the hidden treasure.")
-        print("You have successfully navigated the Mysterious Vortex.")
-    elif choice == '2':
-        print("\nYou decide to leave the chest untouched and return to the vortex.")
-        choose_path()
-    else:
-        print("Invalid choice. Try again.")
-        deeper_cave()
 
 def secret_chamber():
     print("\nYou enter the mysterious door and find yourself in a dimly lit chamber.")
