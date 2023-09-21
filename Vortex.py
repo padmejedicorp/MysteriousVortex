@@ -26,6 +26,19 @@ def dark_tunnel():
     else:
         print("Invalid choice. Try again.")
         dark_tunnel()
+def choose_path():
+    print("\nYou stand at a crossroads. Which path will you choose?")
+    print("1. Go left into a dark tunnel.")
+    print("2. Go right towards a glowing light.")
+    choice = input("Enter your choice (1 or 2): ")
+
+    if choice == '1':
+        dark_tunnel()
+    elif choice == '2':
+        glowing_light()
+    else:
+        print("Invalid choice. Try again.")
+        choose_path()
 
 def glowing_light():
     print("\nAs you approach the glowing light, it intensifies.")
