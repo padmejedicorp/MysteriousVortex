@@ -6,19 +6,7 @@ def introduction():
     print("Your goal is to navigate through the vortex and uncover its secrets.")
     print("Choose your path carefully, and beware of the unknown.")
 
-def choose_path():
-    print("\nYou stand at a crossroads. Which path will you choose?")
-    print("1. Go left into a dark tunnel.")
-    print("2. Go right towards a glowing light.")
-    choice = input("Enter your choice (1 or 2): ")
 
-    if choice == '1':
-        dark_tunnel()
-    elif choice == '2':
-        glowing_light()
-    else:
-        print("Invalid choice. Try again.")
-        choose_path()
 
 def dark_tunnel():
     print("\nYou enter the dark tunnel, and it becomes pitch black.")
