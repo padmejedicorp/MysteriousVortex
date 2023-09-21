@@ -6,8 +6,6 @@ def introduction():
     print("Your goal is to navigate through the vortex and uncover its secrets.")
     print("Choose your path carefully, and beware of the unknown.")
 
-
-
 def dark_tunnel():
     print("\nYou enter the dark tunnel, and it becomes pitch black.")
     print("You hear strange whispers all around you.")
